@@ -13,8 +13,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(__dirname));
 
-// MongoDB Setup (Local by default, can use Atlas URL)
-const MONGO_URI = 'mongodb://127.0.0.1:27017/youandmedb';
+// MongoDB Setup - uses Atlas in production, local in development
+const MONGO_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/youandmedb';
 
 mongoose.connect(MONGO_URI)
     .then(() => console.log("✅ MongoDB Connected"))
