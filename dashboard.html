@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Private Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkLogin()">
+
+  <div class="dashboard">
+
+    <h2>💞 Our Private Space</h2>
+
+    <div class="tabs">
+      <button onclick="showTab('chat')">💬 Chat</button>
+      <button onclick="showTab('songs')">🎵 Songs</button>
+      <button onclick="showTab('games')">🎮 Games</button>
+      <button onclick="logout()">🚪 Logout</button>
+    </div>
+
+    <!-- CHAT -->
+    <div id="chat" class="tab">
+      <div id="chatBox" class="chatBox"></div>
+
+      <input type="text" id="msg" placeholder="Type message">
+      <button onclick="sendMsg()">Send</button>
+    </div>
+
+    <!-- SONGS -->
+    <div id="songs" class="tab">
+      <input type="file" id="songUpload" accept="audio/*">
+      <button onclick="uploadSong()">Upload</button>
+      <ul id="songList"></ul>
+    </div>
+
+    <!-- GAMES -->
+    <div id="games" class="tab">
+      <a href="https://playtictactoe.org/" target="_blank">Tic Tac Toe</a><br>
+      <a href="https://play2048.co/" target="_blank">2048</a><br>
+      <a href="https://chromedino.com/" target="_blank">Car Game</a>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+body {
+  font-family: Arial;
+  background: #0f2027;
+  color: white;
+  text-align: center;
+}
+
+.box {
+  margin-top: 100px;
+}
+
+input,
+button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background: #00ffcc;
+}
+
+.chatBox {
+  height: 200px;
+  overflow: auto;
+  background: white;
+  color: black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.tab {
+  display: none;
+}
+
+/* center full page */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* top button glass box */
+.tabs {
+  display: flex;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* tab buttons */
+.tabs button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #00ffcc;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.tabs button:hover {
+  transform: scale(1.08);
+  background: #00e6b8;
+}
+
+.chatBox {
+  height: 320px;
+  overflow-y: auto;
+  background: #e5ddd5;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+/* common bubble */
+.msg {
+  max-width: 70%;
+  padding: 10px 14px;
+  border-radius: 15px;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+/* my message */
+.me {
+  align-self: flex-end;
+  background: #25D366;
+  color: white;
+  border-bottom-right-radius: 5px;
+}
+
+/* other message */
+.other {
+  align-self: flex-start;
+  background: white;
+  color: black;
+  border-bottom-left-radius: 5px;
+}

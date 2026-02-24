@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Private Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="box">
+        <h2>Private Sign Up 🔐</h2>
+
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+
+        <div style="display: flex; gap: 10px; margin-top: 15px; justify-content: center;">
+            <button onclick="registerUser()" style="background: #25d366;">Sign Up</button>
+            <a href="index.html" style="text-decoration: none;">
+                <button>Back to Login</button>
+            </a>
+        </div>
+        <p id="error"></p>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+
+</html>
